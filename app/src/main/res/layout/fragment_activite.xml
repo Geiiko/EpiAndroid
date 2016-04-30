@@ -1,0 +1,57 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.zwertv.epiandroid.ActiviteFragment"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:alignmentMode="alignBounds"
+    android:background="@drawable/border"
+    android:id="@+id/contentday">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:id="@+id/activiteTime"
+        android:layout_columnWeight="1"
+        android:width="0dp"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/activiteTitle"
+        android:layout_row="0"
+        android:layout_rowSpan="2"
+        android:layout_column="1"
+        android:layout_columnWeight="6"
+        android:width="0dp"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:id="@+id/activiteTimeEnd"
+        android:layout_columnWeight="1"
+        android:width="0dp"
+        android:layout_gravity="fill_horizontal|bottom"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+</GridLayout>

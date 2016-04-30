@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zwertv.epiandroid.profileFragment"
+    android:rowCount="3"
+    android:columnCount="3">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutuser"
+        android:background="@drawable/borderlight"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ProfilePicture"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/decriptionofpicture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logtest"
+            android:id="@+id/login"
+            android:layout_toRightOf="@id/ProfilePicture"
+            android:layout_toEndOf="@id/ProfilePicture"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gpa"
+            android:layout_below="@id/login"
+            android:layout_toRightOf="@id/ProfilePicture" />
+
+        <com.zwertv.epiandroid.PercentView
+            android:id="@+id/percentview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lognorm"
+            android:layout_below="@id/percentview"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@id/layoutuser"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messages"></LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
